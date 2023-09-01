@@ -1,6 +1,6 @@
 <?php
 
-namespace Youer\LaravelJdSd;
+namespace Youer\LaravelJdSdk;
 
 use Illuminate\Contracts\Foundation\Application as LaravelApplication;
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;

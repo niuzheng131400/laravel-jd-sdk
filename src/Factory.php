@@ -1,6 +1,6 @@
 <?php
 
-namespace Youer\LaravelJdSd;
+namespace Youer\LaravelJdSdk;
 
 use Illuminate\Support\Arr;
 
