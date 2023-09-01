@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Youer\\LaravelJdSdk\\' => array($baseDir . '/src'),
+    'JDong\\' => array($baseDir . '/src/JDong'),
 );

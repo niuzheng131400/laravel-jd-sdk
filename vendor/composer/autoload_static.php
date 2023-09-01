@@ -11,12 +11,20 @@ class ComposerStaticInitb9a1dd8813f74bdd0f5836b3cdcd0233
         array (
             'Youer\\LaravelJdSdk\\' => 19,
         ),
+        'J' => 
+        array (
+            'JDong\\' => 6,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'Youer\\LaravelJdSdk\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
+        ),
+        'JDong\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/JDong',
         ),
     );
 

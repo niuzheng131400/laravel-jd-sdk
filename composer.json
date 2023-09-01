@@ -8,7 +8,8 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Youer\\LaravelJdSdk\\": "src/"
+            "Youer\\LaravelJdSdk\\": "src/",
+            "JDong\\": "src/JDong"
         }
     },
     "authors": [
