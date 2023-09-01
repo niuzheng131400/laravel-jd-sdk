@@ -4,6 +4,11 @@ namespace Youer\LaravelJdSdk;
 
 use Illuminate\Support\Arr;
 
+use JDong\Application as Jd;
+
+/**
+ * @method Jd jingdong()
+ */
 class Factory
 {
     /**
@@ -46,7 +51,7 @@ class Factory
             !array_key_exists('app_secret', $config)) {
             throw new \InvalidArgumentException('app_key and app_secret is required');
         }
-        return Arr::only($config, ['app_key', 'app_key', 'format']);
+        return Arr::only($config, ['app_key', 'app_secret', 'format']);
     }
 
     /**
@@ -56,11 +61,14 @@ class Factory
      */
     private function make($name, array $config = [])
     {
-        $config = $this->getConfig($config);
-        $c = new $name();
-        $c->appKey = $config['app_key'];
-        $c->appSecret = $config['appSecret'];
-        $c->format = $config['format'] ?? 'json';
-        return $c;
+        if ($name == 'jingdong') {
+            $config = $this->getConfig($config);
+            $c = new Jd();
+            $c->appKey = $config['app_key'];
+            $c->appSecret = $config['app_secret'];
+            $c->format = $config['format'] ?? 'json';
+            return $c;
+        }
+        return null;
     }
 }
