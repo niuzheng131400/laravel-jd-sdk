@@ -1,0 +1,21 @@
+{
+    "name": "youer/laravel-jd-sdk",
+    "description": "Jd Alliance SDK based on laravel framework.",
+    "type": "library",
+    "require": {
+        "php": ">= 7.1.3"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Youer\\LaravelJdSdk\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "youer",
+            "email": "771036148@qq.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
